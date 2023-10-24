@@ -1,0 +1,9 @@
+{
+  "short_name": "Test Assignment",
+  "name": "Test Assignment for Frontend Developer job",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
