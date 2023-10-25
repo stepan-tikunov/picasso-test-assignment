@@ -11,7 +11,7 @@ interface PostCardProps {
     post: Post;
 }
 
-export const PostCard: React.FC<PostCardProps> = React.memo((props) => {
+export const PostCard: React.FC<PostCardProps> = (props) => {
     const { post, ...cardProps } = props;
 
     const navigate = useNavigate();
@@ -41,4 +41,4 @@ export const PostCard: React.FC<PostCardProps> = React.memo((props) => {
             <div className={styles.postBody}>{post.body}</div>
         </Card>
     );
-});
+};

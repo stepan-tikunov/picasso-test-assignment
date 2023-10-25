@@ -45,8 +45,8 @@ export const PostBlock: React.FC = () => {
         <Flex vertical={true} gap="20px">
             {posts &&
                 posts.map((post, index) => (
-                    <VirtualScroll heightPx={200}>
-                        <PostCard key={index} post={post} />
+                    <VirtualScroll key={index} heightPx={200}>
+                        <PostCard post={post} />
                     </VirtualScroll>
                 ))}
             {error && (
